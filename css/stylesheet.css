@@ -418,7 +418,7 @@ header section #right .hero-image {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 10rem;
+  padding-bottom: 20rem;
 }
 
 .features #feature-cards div {
