@@ -213,7 +213,7 @@ header section #right .hero-image {
 }
 
 .numbers div {
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .numbers div h3 {
@@ -684,5 +684,92 @@ footer {
   background: url("../assests/password.svg") center center no-repeat;
   background-size: contain;
   z-index: 100;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  header nav div {
+    width: 22rem;
+  }
+  header section #left {
+    max-width: 30%;
+    min-width: 60rem;
+  }
+  #feature-cards {
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 35%;
+  }
+  header nav div {
+    width: 25rem;
+  }
+  .whyus-con {
+    -webkit-transform: translateY(-120px) !important;
+            transform: translateY(-120px) !important;
+  }
+  .points {
+    padding: 0px 8rem 18rem 8rem;
+  }
+}
+
+@media (max-width: 594px) {
+  header nav div {
+    padding-left: 0;
+    width: 18rem;
+  }
+  header section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: 800px;
+  }
+  header section #left, header section #right {
+    width: 100%;
+  }
+  header section #left {
+    padding: 0rem 0rem 0rem 4rem;
+  }
+  header section #left div h1 {
+    font-size: 6rem;
+  }
+  .whyUs .whyus-con p {
+    width: 35rem;
+  }
+  .points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 5rem 18rem 5rem;
+  }
+  .points .left {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 4rem;
+  }
+  .points .right {
+    width: 100%;
+  }
+  .points::before {
+    top: -68px;
+  }
+  #feature-cards {
+    padding-bottom: 2rem !important;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */

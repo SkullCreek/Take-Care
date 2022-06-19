@@ -163,7 +163,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     div{
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
         h3{
             width: 100%;
             text-align: center;
@@ -579,4 +579,104 @@ footer{
             z-index: 100;
         }
     }
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        nav{
+            div{
+                width: 22rem;
+            }
+        }
+        section{
+            #left{
+                max-width: 30%;
+                min-width: 60rem;
+            }
+            #right{
+                #hero-image{
+
+                }
+            }
+        }
+    }
+    #feature-cards{
+        justify-content: space-evenly!important;
+    }
+        
+}
+@media (max-width:998px){
+    html{
+        font-size: 40%;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 35%;
+    }
+    header{
+        nav{
+            div{
+                width: 25rem;
+            }
+        }
+    }
+    .whyus-con{
+        transform: translateY(-120px)!important;
+    }
+    .points{
+        padding: 0px 8rem 18rem 8rem;
+    }
+}
+
+@media (max-width:594px){
+    header {
+        nav{
+            div{
+                padding-left: 0;
+                width: 18rem;
+            }
+        }
+        section{
+            flex-direction: column!important;
+            height: 800px;
+            #left,#right{
+                width: 100%;
+            }
+            #left{
+                padding: 0rem 0rem 0rem 4rem;
+                div{
+                    h1{
+                        font-size: 6rem;
+                    }
+                }
+            }
+        }
+
+    }
+    .whyUs .whyus-con p{
+        width: 35rem;
+    }
+    .points{
+        flex-direction: column;
+        padding: 0px 5rem 18rem 5rem;
+        .left{
+            width: 100%;
+            height: 400px;
+            margin-bottom: 4rem;
+        }
+        .right{
+            width: 100%;
+        }
+    }
+    .points::before{
+        top: -68px;
+    }
+    #feature-cards{
+        padding-bottom: 2rem!important;
+    }
+
 }
