@@ -13,6 +13,10 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <title>dashboard</title>
 </head>
 <body>
@@ -36,13 +40,14 @@
             </section>
             <section id="bottom">
                 <p id="hi_name"></p>
-                <h1><span>Welcome back👋</span><a href="">Alert</a></h1>
-                <div id="crops">
-                    
+                <h1><span id="data">Welcome back👋</span><a href="">Alert</a></h1>
+                <div id="map">
+
                 </div>
             </section>
         </section>
     </main>
-    <script src="javascript/expenditure.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="javascript/location.js" type="module"></script>
 </body>
 </html>
